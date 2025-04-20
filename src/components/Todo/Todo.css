@@ -17,12 +17,12 @@
 }
 .add-todo form {
     display: flex;
-    height: 35px;
+    height: 40px;
 }
 .add-todo input{
     height: 100%;
     width: 95%;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
 }
 
@@ -58,11 +58,17 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #F44336;
     transition: background 0.5s;
+    font-size: 14px;
 }
 .todo-item .right .complete {
     border-right: 1px solid;
+    color: white;
 }
+/* .todo-item .right .recomplete {
+    color: black;
+} */
 .todo-item .right .complete:hover {
     background-color: #5CD2DB;
 }

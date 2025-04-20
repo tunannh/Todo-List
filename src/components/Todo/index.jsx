@@ -44,7 +44,7 @@ function Todo() {
 
                   <div className="right">
                     {item.completed ? (
-                      <span className="complete" onClick={() => dispatch(undone(item.id))}>Đặt lại</span>
+                      <span className="complete recomplete" onClick={() => dispatch(undone(item.id))}>Đặt lại</span>
                     ) : (
                       <span className="complete" onClick={() => dispatch(done(item.id))}>Xong</span>
                     )}
