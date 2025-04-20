@@ -21,12 +21,14 @@ const todoReducer = (state = init, action) => {
    let index = 0;
    switch (action.type) {
       case "CREATE":
-         newState = [...state,
+         newState = [
             {
                id: Date.now(),
                content: action.content,
                completed: false,
-            }]
+            },
+            ...state
+         ]
          return newState;
       
       case "DONE":
